@@ -1,0 +1,319 @@
+body {
+  max-width: 100%;
+  overflow-x:hidden;
+  padding-top: 70px;
+}
+.hero-spacer {
+  margin-top: 1px;
+  max-width: 100%;
+  max-height:100%;
+  background-image:  linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5)
+),url("../images/best-bg.jpg");
+    background-size: 100% 100%;
+    overflow: auto;
+
+}
+.paginationContainer{
+  margin-top: 30px;
+}
+.row-images{
+    padding:20px;
+}
+.img-circle {
+  border-radius: 50%;
+  width:250px;
+  height:250px;
+  float: left;
+  position:relative;
+  margin-left: 0px;
+  display: block;
+  max-width:100%;
+
+}
+.img-circle .img-responsive{
+    max-width:100% !important;
+    height:auto;
+    display:block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.main_search_image{
+
+    padding:20px;
+}
+
+.info{
+  float: left;
+  margin-left: 30px;
+  color:black;
+  width:60%;
+  height: auto;
+  display:block;
+}
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+}
+
+.thumbnail .caption{ overflow :auto;  white-space:nowrap; }
+
+.thumbnail img{
+
+    max-width:100%;
+    /*max-height:100%;*/
+    height:250px;
+    background-size: 100% 100%;
+    background-position: center;
+    overflow: auto;
+
+}
+
+.navbar-brand{
+  padding:15px 15px;
+
+}
+.navbar-brand span{
+    color:#ffffff;
+    font-size: 22px;
+}
+.navbar-toggle{
+    margin-top: 20px;
+}
+.main_search span {
+  background-color: grey;
+  color: lightyellow;
+  width: 100%;
+
+}
+#search_radios{
+    color:#ffffff;
+}
+
+.pagination a{
+    color:#186631;
+}
+
+footer {
+  margin: 50px 0;
+}
+/*Media queries to ensure responsiveness across different screens*/
+@media (min-width:320px)  {
+
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+    .info-collapse{
+        display:none;
+    }
+    .info{
+        font-size: 20px;
+        margin-left: 70px;
+        font-size: 0.8em;
+    }
+    .info h2{
+        font-size: 1em;
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+        line-height: 0;
+    }
+    .img-circle{
+        display:none;
+    }
+    .main_search_image,.results_maintitle{
+        display:block;
+        background-color: transparent;
+    }
+    .search-criteria-collapse{
+        display:block;
+        background-color: transparent;
+    }
+    .caret, .dropdown-toggle{
+        display:none;
+    }
+    .thumbnail img{
+        max-height: 300px;
+        max-width:300px;
+    }
+
+}
+@media only screen and (max-width : 505px) {
+
+    .info{
+        margin-left: 70px;
+        font-size: 0.8em;
+    }
+    .info h2{
+        font-size: 1.5em;
+    }
+    .info-collapse{
+        display:none;
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+    .img-circle{
+        display:none;
+    }
+    .main_search_image,.results_maintitle{
+        display:block;
+        background-color: transparent;
+    }
+    .thumbnail img{
+        height: 300px;
+        width: 300px;
+    }
+    .search-criteria-collapse{
+        display:block;
+        background-color: transparent;
+    }
+    .caret, .dropdown-toggle{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+
+    .info-collapse{
+        display:none;
+
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+    .img-circle{
+        display:none;
+    }
+    .main_search_image,.results_maintitle{
+        display:block;
+        background-color: transparent;
+    }
+    .thumbnail img{
+        max-height: 250px;
+        width: 300px;
+        /*padding-bottom: 40%;*/
+    }
+    .search-criteria-collapse{
+        display:block;
+        background-color: transparent;
+    }
+    .caret, .dropdown-toggle{
+        display:none;
+    }
+
+}
+@media only screen and (max-width: 767px) and (min-width: 651px){
+
+    .info-collapse{
+        display:none;
+
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+    .img-circle{
+        display:none;
+    }
+    .main_search_image,.results_maintitle{
+        display:block;
+        background-color: transparent;
+    }
+    .thumbnail img{
+        height: 100%;
+        width:100%
+    }
+    .search-criteria-collapse{
+        display:block;
+        background-color: transparent;
+    }
+    .caret, .dropdown-toggle{
+        display:none;
+    }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 768px) {
+
+    .info-collapse{
+        display:none;
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+    .main_search_image,.results_maintitle{
+        display:none;
+    }
+    .thumbnail{
+          max-height:100%;
+          max-width:100%;
+          padding-bottom: 10%;
+      }
+    .search-criteria-collapse{
+        display:none;
+    }
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+
+    .info-collapse{
+        display:none;
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+
+    }
+    .main_search_image,.results_maintitle{
+        display:none;
+    }
+    .search-criteria-collapse{
+        display:none;
+    }
+}
+@media only screen and (max-width: 2880px) and (min-width: 1052px) {
+    .info-collapse{
+        display:none;
+    }
+    .main_search span,h1{
+        display:block;
+        background-color: transparent;
+    }
+    .main_search_image,.results_maintitle{
+        display:none;
+    }
+    .search-criteria-collapse{
+        display:none;
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (-webkit-min-device-pixel-ratio: 1),
+only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+}

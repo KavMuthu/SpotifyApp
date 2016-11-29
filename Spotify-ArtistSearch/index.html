@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Spotify: Artist Search</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+	<!--Navbar-->
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="navbar-header" >
+		<!--Navbar collapse-->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" rel="home" href="#" onclick="window.location.reload()"><span><img src="images/white-logo.png">Spotify</span></a>
+	</div>
+	<!--Navbar mobile version-->
+	<div class="collapse navbar-collapse">
+		<div class="col-sm-5 col-md-5 pull-right" style="padding-top: 10px">
+			<div class="search-criteria-collapse  text-center" id="search_radios">
+				<label class="radio-inline"><input type="radio" id= "Albums" value="Albums" name="grp-selection">Albums</label>
+				<label class="radio-inline"><input type="radio" id="Tracks" value="Tracks" name="grp-selection">Tracks</label>
+				<label class="radio-inline"><input type="radio" id="Related_Artists" value="Related_Artists" name="grp-selection">Related Artists</label>
+			</div>
+			<!--Search form-->
+			<form class="navbar-form navbar-search" role="search" id="search-artist" >
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-search btn-default dropdown-toggle" data-toggle="dropdown" id="search-basis">
+							<span class="caret"></span>
+						</button> &nbsp;
+						<ul class="dropdown-menu pull-left search-criteria" role="menu" id="search-criteria">
+							<li>
+								<a>
+									<span class="albums" value="Albums">Albums</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="tracks" value="Tracks">Tracks</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="tracks" value="Related Artists">Related Artists</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<input type="text" class="form-control" id="artist-search" required>
+
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="submit" ><i class="fa fa-search" aria-hidden="true" ></i></button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+	<!-- Jumbotron Header -->
+	<header class="jumbotron hero-spacer" >
+		<div class="row pull-right info-collapse">
+			<div class="col-sm-4 col-md-3 sidebar">
+				<div class="mini-submenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<div class="list-group">
+        <span class="list-group-item">
+			<b>Artist Info</b>
+            <span class="pull-right slide-submenu">
+                <i class="fa fa-times"></i>
+            </span>
+            <span class="search-info"></span>
+        </span>
+				</div>
+			</div>
+		</div>
+		<div class="main_search">
+		</div>
+	</header>
+	<hr>
+	<!-- Page Content -->
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="results_maintitle text-center"></h3>
+			<div class="main_search_image text-center">
+		</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="results_subtitle text-center"></h3>
+			</div>
+		</div>
+		<div class="row-images text-center" >
+		</div>
+	</div>
+		<div class="paginationContainer text-center">
+		</div>
+	<hr>
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<p>Copyright &copy; Spotify|Artist Search Website 2014. This is a bootstrap template</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="spotify-web-api.js"></script>
+		<script type="text/javascript" src="js/spotify-client.js"></script>
+		<script type="text/javascript" src="js/pagination.js"></script>
+
+	</body>
+</html>
